@@ -1,0 +1,63 @@
+name: refresh assets
+
+# Regenerates the readout panel and the contribution-graph illustration.
+#
+# The graph is the one that genuinely has to run on a schedule: it renders a
+# rolling 53-week window, so a committed copy goes stale on its own every week
+# even if nothing else changes.
+#
+# Same posture as everything else here: the automatic per-repository
+# GITHUB_TOKEN, nothing personal, no secret to leak.
+
+on:
+  schedule:
+    # Mondays, after the week rolls over so the graph window is correct.
+    - cron: "41 6 * * 1"
+  workflow_dispatch:
+  push:
+    # Regenerate when a generator changes, so the committed SVGs can never
+    # disagree with the code that produced them.
+    paths:
+      - "tools/make_stats.py"
+      - "tools/make_neofetch.py"
+      - "tools/make_graph.py"
+      - ".github/workflows/stats.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    if: github.repository == 'darik0d/darik0d'
+
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+
+      - name: Regenerate
+        env:
+          # Raises the API rate limit from 60/hour to 5000 and is scoped to
+          # this repository. Only used for reading public profile data.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          python3 tools/make_neofetch.py --refresh
+          python3 tools/make_graph.py
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          git add -A assets
+          # Staged comparison, so a brand-new asset counts as a change too.
+          if git diff --cached --quiet; then
+            echo "stats unchanged; nothing to commit"
+            exit 0
+          fi
+          git -c user.name=darik0d \
+              -c user.email=70072471+darik0d@users.noreply.github.com \
+              commit -m "stats: refresh $(date -u +%Y-%m-%d)"
+          git push origin HEAD:${{ github.ref_name }}

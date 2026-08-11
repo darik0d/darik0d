@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 812 512" width="812" height="512" fill="none" role="img" aria-label="Profile readout for darik0d, also known as O'Daria. OPEN FOR WORK FROM SEPTEMBER. Visit O-DARIA.COM.">
+<title>darik0d - readout</title>
+<defs>
+<linearGradient id="nbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#080a12"/><stop offset="1" stop-color="#0d1020"/></linearGradient>
+<pattern id="ndots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="1.2" cy="1.2" r="1.2" fill="#161a2e"/></pattern>
+<style>.m { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; } .k { font-size: 14px; fill: #22d3ee; font-weight: 600; } .v { font-size: 14px; fill: #e8eef7; } .h { font-size: 13px; fill: #a78bfa; font-weight: 700; letter-spacing: 2.2px; } .u { font-size: 16px; fill: #e8eef7; font-weight: 700; letter-spacing: 0.4px; } .lead { stroke: #8b96ad; stroke-width: 1.6; stroke-linecap: round; stroke-dasharray: 0.5 5.5; opacity: .55; } .rule { stroke: #1c2338; stroke-width: 1; } .sk { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; } .sk-big { font-size: 38px; font-weight: 700; letter-spacing: -1px; fill: #080a12; } /* Large enough to survive being scaled twice: once into the readout panel, and again when GitHub fits that panel into its column. */ .sk-sm { font-size: 21px; font-weight: 700; letter-spacing: 1.6px; fill: #080a12; opacity: .78; } /* The placement transform lives on an outer group. A CSS transform in a keyframe replaces the element's transform attribute instead of composing with it, so animating the placed element directly would fling it to the origin. */ .sk-peel { animation: wobble 6s ease-in-out infinite; } @keyframes wobble { 0%, 100% { transform: rotate(-1deg); } 50% { transform: rotate(0.8deg); } } @media (prefers-reduced-motion: reduce) { .sk-peel { animation: none; } }</style>
+<filter id="sk-drop" x="-30%" y="-30%" width="180%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.45"/></filter>
+</defs>
+<rect width="780" height="484" rx="16" fill="url(#nbg)"/>
+<rect width="780" height="484" rx="16" fill="url(#ndots)" opacity="0.5"/>
+<text class="m u" x="26" y="44">darik0d@github</text>
+<line class="rule" x1="172" y1="39" x2="754" y2="39"/>
+<text class="m k" x="26" y="67">Alias:</text>
+<text class="m v" x="754" y="67" text-anchor="end">darik0d  ·  O'Daria</text>
+<line class="lead" x1="88" y1="63" x2="581" y2="63"/>
+<text class="m k" x="26" y="90">Host:</text>
+<text class="m v" x="754" y="90" text-anchor="end">Whole world</text>
+<line class="lead" x1="79" y1="86" x2="649" y2="86"/>
+<text class="m k" x="26" y="113">Status:</text>
+<text class="m v" x="754" y="113" text-anchor="end">Freelance, available from September</text>
+<line class="lead" x1="96" y1="109" x2="443" y2="109"/>
+<text class="m h" x="26" y="152">LANGUAGES</text>
+<line class="rule" x1="125" y1="147" x2="754" y2="147"/>
+<text class="m k" x="26" y="175">Programming:</text>
+<text class="m v" x="754" y="175" text-anchor="end">C++, Python, C, JavaScript</text>
+<line class="lead" x1="139" y1="171" x2="520" y2="171"/>
+<text class="m k" x="26" y="198">Markup:</text>
+<text class="m v" x="754" y="198" text-anchor="end">HTML, CSS, LaTeX, YAML</text>
+<line class="lead" x1="96" y1="194" x2="555" y2="194"/>
+<text class="m k" x="26" y="221">Human:</text>
+<text class="m v" x="754" y="221" text-anchor="end">English, Esperanto, Russian, Ukrainian, Dutch &amp; French</text>
+<line class="lead" x1="88" y1="217" x2="280" y2="217"/>
+<text class="m h" x="26" y="260">BUILDING</text>
+<line class="rule" x1="115" y1="255" x2="754" y2="255"/>
+<text class="m k" x="26" y="283">Graphics:</text>
+<text class="m v" x="754" y="283" text-anchor="end">Gaussian splats, CAD, Mechanical characters' rig</text>
+<line class="lead" x1="113" y1="279" x2="331" y2="279"/>
+<text class="m k" x="26" y="306">Research:</text>
+<text class="m v" x="754" y="306" text-anchor="end">Photogrammetry, Spiking nets, Federated learning on microcontrollers</text>
+<line class="lead" x1="113" y1="302" x2="159" y2="302"/>
+<text class="m k" x="26" y="329">For fun:</text>
+<text class="m v" x="754" y="329" text-anchor="end">Telegram bots, Three.js websites, hackathons, kiwi or potato classifier</text>
+<line class="lead" x1="105" y1="325" x2="133" y2="325"/>
+<text class="m h" x="26" y="368">GITHUB</text>
+<line class="rule" x1="96" y1="363" x2="754" y2="363"/>
+<text class="m k" x="26" y="391">Contribution graph:</text>
+<text class="m v" x="754" y="391" text-anchor="end">don't trust it</text>
+<line class="lead" x1="199" y1="387" x2="624" y2="387"/>
+<rect x="0.5" y="0.5" width="779" height="483" rx="16" stroke="#1c2338" stroke-width="1"/>
+<g transform="translate(667.2 453.2) rotate(-8.0) scale(0.62)"><g class="sk-peel" filter="url(#sk-drop)"><rect x="-224.0" y="-61.0" width="448" height="122" rx="26" fill="#e8eef7"/><rect x="-215.0" y="-52.0" width="430" height="104" rx="19" fill="#22d3ee"/><text class="sk sk-big" x="0" y="-2.0" text-anchor="middle">OPEN FOR WORK</text><text class="sk sk-sm" x="0" y="30.0" text-anchor="middle">O-DARIA.COM</text></g></g>
+</svg>
