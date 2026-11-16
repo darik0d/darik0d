@@ -22,7 +22,7 @@
 <text class="m h" x="26" y="152">LANGUAGES</text>
 <line class="rule" x1="125" y1="147" x2="754" y2="147"/>
 <text class="m k" x="26" y="175">Programming:</text>
-<text class="m v" x="754" y="175" text-anchor="end">C++, Python, C, JavaScript</text>
+<text class="m v" x="754" y="175" text-anchor="end">C++, Python, TypeScript, C</text>
 <line class="lead" x1="139" y1="171" x2="520" y2="171"/>
 <text class="m k" x="26" y="198">Markup:</text>
 <text class="m v" x="754" y="198" text-anchor="end">HTML, CSS, LaTeX, YAML</text>
